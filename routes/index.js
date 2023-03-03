@@ -15,15 +15,15 @@ const messages = [
 ];
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'MessageBoard' });
+  res.render('index', { title: 'MessageBoard', messages: messages });
 });
 
-router.get('/new', function(req, res){
-  res.render('form', { title: 'New Message'});
-});
+// router.get('/new', function(req, res){
+//   res.render('form', { title: 'New Message'});
+// });
 
-router.post('/new', (req, res) => {
-  // Handle form submission here
-});
+// router.post('/new', (req, res) => {
+//   // Handle form submission here
+// });
 
 module.exports = router;
