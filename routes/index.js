@@ -3,7 +3,7 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "Hi there cruel World!",
+    text: "What type of person doesn’t like pizza? \nA weir-dough.",
     user: "Pizza",
     added: new Date()
   },
