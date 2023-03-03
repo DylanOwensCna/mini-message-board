@@ -1,11 +1,14 @@
 extends layout
 
-//- block content
-//-   h1= title
-//-   p Welcome to #{title}
-
 block content
-  h1= title
+  <h1 id="index_title">Mini Message-Board</h1>
     each message in messages
-      p #{message.text}
-  
+      <div class="message_display">
+        h2= message.user 
+        h3= message.text 
+        p= message.added
+      </div>
+    <Form action="/new">
+      input(type="submit" value="Add New Message!")    
+    </form>   
+

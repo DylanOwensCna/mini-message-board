@@ -1,16 +1,25 @@
 extends layout
 
 block content
-    h1= title
-    form(action="/" method="post")
-      label(for="name") Name:
-      input(type="text" id="name" name="name")
-      br
-      label(for="message") Message:
-      textarea(id="message" name="message")
-      br
-      input(type="submit" value="Submit")
-
-<form method="POST" action="/new">
-   put your inputs and buttons in here!
-</form>
+   <Form action="/new" method="post">
+      h1= "New Post"
+         br
+         <div id= "newpost">
+            label(for="name") Enter Name:
+            input(
+               id= "user_name" 
+               type='text' 
+               name='user_name_field' 
+               placeholder="Please Enter Name")
+            br
+            label(for="message") Message:
+            textarea(cols="90", rows="4" 
+               type="text" 
+               name="user_messages" 
+               placeholder="Please Enter Message")
+            br
+            input(
+               type="submit" 
+               value="Submit")
+         </div>
+   </form>
