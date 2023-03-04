@@ -2,13 +2,14 @@ extends layout
 
 block content
   <h1 id="index_title">Mini Message-Board</h1>
+    hr
     each message in messages
       <div class="message_display">
-        h2= message.user 
-        h3= message.text 
-        p= message.added
+        h3= "User: "+message.user 
+        h2= message.text 
+        p= "Posted @: "+message.added
       </div>
     <Form action="/new">
       input(type="submit" value="Add New Message!")    
     </form>   
-
+ 

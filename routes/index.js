@@ -11,6 +11,11 @@ const messages = [
     text: "Issa me!",
     user: "Mario",
     added: new Date()
+  },
+  {
+    text: "To infinity and beyond!",
+    user: "Buzz Lightyear",
+    added: new Date()
   }
 ];
 /* GET home page. */
